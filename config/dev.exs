@@ -36,8 +36,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :reunions, Reunions.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: System.get_env("DB_USERNAME"),
-  password: System.get_env("DB_PASSWORD"),
+  username: 'postgres',#System.get_env("DB_USERNAME"),
+  password: 'password',#System.get_env("DB_PASSWORD"),
   database: "reunions_dev",
   hostname: "localhost",
   pool_size: 10
